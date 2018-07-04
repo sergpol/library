@@ -9,10 +9,8 @@
 import Foundation
 import UIKit
 
-public class AlertModule: NSObject {
-    let shared = AlertModule()
-    
-    public func showAlert(onViewController: UIViewController) {
+open class AlertModule: NSObject {
+    open func showAlert(onViewController: UIViewController) {
         let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {(_) in
         
